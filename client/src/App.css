@@ -1,0 +1,227 @@
+button {
+  outline: 0;
+}
+.display-none {
+  display: none;
+}
+
+/* contact header */
+
+.contact-header-container {
+  display: flex;
+  height: 280px;
+  background-color: teal;
+  margin-bottom: 5%;
+}
+.header-title {
+  color: ghostwhite;
+  font-size: 8em;
+}
+.contact-header-container p {
+  color: ghostwhite;
+  font-size: x-large;
+}
+.add-contact-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 5%;
+}
+.click-here-message {
+  margin: 0 3%;
+  font-size: large;
+}
+.add-contact-img {
+  height: 60px;
+  width: 60px;
+  fill: ghostwhite;
+  transition: height 0.3s, width 0.3s;
+}
+.add-contact-img:hover {
+  height: 80px;
+  width: 80px;
+}
+
+/* add form */
+.add-contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  border: 0.5px solid rgba(29, 34, 44, 0.774);
+  padding: 0 5%;
+  margin: 1% 10%;
+  z-index: 1;
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.add-contact-form input,
+.edit-contact-form input {
+  border: 1px solid rgba(29, 34, 44, 0.774);
+  border-radius: 4px;
+  padding: 2%;
+}
+::placeholder {
+  opacity: 0.5;
+}
+.add-contact-form label,
+.edit-contact-form label {
+  font-weight: bold;
+}
+
+/*contact card */
+.contact-card {
+  border: 0.5px solid rgba(29, 34, 44, 0.363);
+  border-radius: 10px;
+  width: 35%;
+  background-color: ghostwhite;
+  margin: 2% auto;
+
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(29, 34, 44, 0.507);
+}
+
+.contact-icon {
+  align-self: flex-start;
+  padding: 10px 15px;
+  min-width: 12%;
+  border-radius: 100%;
+  color: white;
+  background-color: teal;
+  border: 0.5px solid rgba(0, 0, 0, 0.425);
+  font-size: x-large;
+  margin: 1% 3% 3% 3%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin: 5%;
+}
+
+.contact-name {
+  margin: auto 15%;
+}
+.contact-email,
+.contact-number {
+  font-weight: bold;
+  color: rgba(26, 23, 23, 0.767);
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 5% 20%;
+}
+.edit-btn,
+.delete-btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 3% 5%;
+  margin: 5%;
+  width: 6rem;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-btn {
+  background-color: white;
+  color: teal;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s;
+}
+.edit-btn:hover {
+  background-color: teal;
+  color: white;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.541);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+.edit-btn:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  transition: 0.3s;
+}
+.delete-btn {
+  background-color: white;
+  color: rgba(220, 20, 60, 0.979);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s;
+}
+.delete-btn:hover {
+  background-color: rgba(220, 20, 60, 0.705);
+  color: white;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.541);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+.delete-btn:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  transition: 0.3s;
+}
+/* edit card   */
+.edit-card {
+  display: flex;
+  height: 280px;
+}
+
+.contact-card-edit {
+  border: 0.5px solid rgba(29, 34, 44, 0.363);
+  border-radius: 10px;
+  width: 35%;
+  background-color: ghostwhite;
+  margin: 2% 5% 2% 10%;
+
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.edit-contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  border: 0.5px solid rgba(29, 34, 44, 0.774);
+  padding: 1% 8%;
+  margin: 1% 5%;
+  z-index: 1;
+  animation: fadein 0.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
